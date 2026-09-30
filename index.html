@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d12">
+  <title>One Signal Scanner</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="app">
+  <header>
+    <div>
+      <div class="eyebrow">POCKET OPTION • SCANNER</div>
+      <h1>One Best Trade</h1>
+    </div>
+    <span id="status" class="pill">READY</span>
+  </header>
+
+  <section class="card hero">
+    <div class="muted">Скануємо всі доступні інструменти</div>
+    <button id="scan">SCAN MARKETS</button>
+    <div id="progress" class="muted">Натисни Scan, щоб почати.</div>
+  </section>
+
+  <section id="result" class="card hidden"></section>
+
+  <section class="card">
+    <h2>Risk scale</h2>
+    <div class="riskbar"><span id="riskfill"></span></div>
+    <div class="scale"><span>0 🟢</span><span>40 🟡</span><span>60 🟠</span><span>80 🔴</span><span>100 ⛔</span></div>
+  </section>
+
+  <section class="card">
+    <h2>Rules</h2>
+    <ul>
+      <li>VWAP + EMA 9/21 напрямок</li>
+      <li>HH/HL або LH/LL структура</li>
+      <li>RSI 14 + Momentum</li>
+      <li>ATR 14 + Volume confirmation</li>
+      <li>Один сигнал або NO TRADE</li>
+    </ul>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
